@@ -1,0 +1,164 @@
+header {
+  background-image: url(../images/bg-pattern-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar {
+  width: 60vw;
+  padding-left: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-bar > div:first-child {
+  width: 19rem;
+}
+
+.menu-bar-button:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-list {
+  position: absolute;
+  top: 9rem;
+  height: 8rem;
+  width: 7rem;
+  border-radius: 5px;
+  line-height: 2rem;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 3px 5px 5px hsla(0, 0%, 0%, 0.164);
+}
+
+.nav-list > ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-user p {
+  display: none;
+}
+
+.header .header-user > a#login-btn:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.header .header-user a#sign-up-btn {
+  color: hsl(356, 100%, 66%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header .header-user a#sign-up-btn:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0.274);
+}
+
+@media (min-width: 1147px) {
+  .illustration-editor {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .illustration-editor > h1 {
+    align-self: center;
+    font-size: 30px;
+    margin-bottom: 8rem;
+  }
+
+  .illustration-editor > div {
+    height: 31vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+    transform: translateX(1vw);
+  }
+
+  .illustration-editor > div > .image {
+    width: 50vw;
+  }
+
+  .illustration-editor > div > .image img {
+    width: 65vw;
+  }
+
+  .illustration-editor > div > .content {
+    height: 30vw;
+    width: 31rem;
+    margin-right: 4rem;
+    display: flex;
+    align-self: end;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .illustration-editor > div > .content h2,
+  .illustration-laptop .content h2 {
+    padding-bottom: 30px;
+  }
+
+  .illustration-phones {
+    height: 25rem;
+    margin: 17rem 0 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: -63% 81%;
+    background-color: hsl(237, 17%, 21%);
+    border-radius: 0 7rem;
+  }
+
+  .illustration-phones .image {
+    margin-top: 50px;
+    padding-right: 61px;
+  }
+
+  .illustration-phones .content {
+    width: 30rem;
+  }
+
+  .illustration-phones div h1 {
+    padding-bottom: 30px;
+    font-size: 33px;
+    color: #fff;
+  }
+
+  .illustration-phones div P {
+    color: hsla(0, 0%, 100%, 0.674);
+  }
+
+  .illustration-laptop {
+    width: 120vw;
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(-18.5%);
+  }
+
+  .illustration-laptop .content {
+    margin-top: 12px;
+    height: 27vw;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .illustration-laptop .image img {
+    width: 65vw;
+  }
+}
